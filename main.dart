@@ -1,25 +1,18 @@
-main() {
-  //Variable
-
+//Data types
+void main() {
   // Strings
-  // var name = 'taufik';
-  String name = 'taoufik';
-  print(name);
-  //var x = 41;
-  int x = 41;
-  print(x);
+  String firstname = 'taoufik';
+  print("String: $firstname");
 
-  //Dynamic
-  dynamic firstName = 'ben';
+  int no = 134534;
+  print('Integer: $no');
 
-  // Const and Final
-  const String fullName = "taoufik ben"; // compile time
-  final String nickName = 'Tuk'; //run time
+  double otherNo = 12.435;
+  print('Double: $otherNo');
 
-  // Declaring and not using
-  var myName;
-  print(myName); //return null
+  bool bln = false;
+  print('Boulean $bln');
 
-  myName = 'taoufik';
-  print(myName);
+  dynamic fullName = 'taoufik ben lhosni';
+  print('Dynamic: $fullName');
 }
