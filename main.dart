@@ -1,18 +1,41 @@
-//Data types
+// Lists
 void main() {
-  // Strings
-  String firstname = 'taoufik';
-  print("String: $firstname");
+  // Lists
+  var myLists = [1, 2, 3];
+  print(myLists[0]);
 
-  int no = 134534;
-  print('Integer: $no');
+  //change an item
+  myLists[0] = 41;
+  print(myLists);
 
-  double otherNo = 12.435;
-  print('Double: $otherNo');
+  //create an empty list
+  var emptyList = [];
+  print(emptyList);
 
-  bool bln = false;
-  print('Boulean $bln');
+  //add to empty list
+  emptyList.add(234);
 
-  dynamic fullName = 'taoufik ben lhosni';
-  print('Dynamic: $fullName');
+  //add multi to empty list
+  emptyList.addAll([1, 2, 3]);
+  print(emptyList);
+
+  //insert at specific position (pos, item)
+  myLists.insert(3, 100);
+  print(myLists);
+
+  //insert many
+  myLists.insertAll(1, [42, 43, 44]);
+  print(myLists);
+
+  //mix list
+  var mixedList = [1, 2, 3, 'Jhon', 'Bob'];
+  print(mixedList);
+
+  //remove from list
+  mixedList.remove('Jhon');
+  print(mixedList);
+
+  //remove from specific location
+  mixedList.remove(1);
+  print(mixedList);
 }
