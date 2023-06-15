@@ -1,20 +1,17 @@
-// Loops
+// Logic
 void main() {
-  // For Loop
-  var num = 6;
-  for (var i = num; i >= 1; i--) {
-    print(i);
+  // if, if/else, if else if
+  // > < >= <= !=
+  var num = 23;
+  if (num == 5) {
+    print('thes number is $num');
+  } 
+  else if (num == 12) {
+    print('the numbre is $num');
+  } else {
+    print('the numbre is out');
   }
 
-  // for in loop
-  var names = ['jhon', 'tina', 'steve'];
-  for (var name in names) {
-    print(name);
-  }
+  
 
-  // While Loop
-  while (num >= 1) {
-    print(num);
-    num--;
-  }
 }
