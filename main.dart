@@ -1,41 +1,30 @@
-// Lists
+// Maps
 void main() {
-  // Lists
-  var myLists = [1, 2, 3];
-  print(myLists[0]);
+  // Maps, key/value pairs
+  var toppings = {'Taoufik': 'royal', 'Mohamed': 'margarita'};
+  print(toppings);
+  print(toppings['Taoufik']);
 
-  //change an item
-  myLists[0] = 41;
-  print(myLists);
+  //show values
+  print(toppings.values);
 
-  //create an empty list
-  var emptyList = [];
-  print(emptyList);
+  //show key
+  print(toppings.keys);
 
-  //add to empty list
-  emptyList.add(234);
+  //show length
+  print(toppings.length);
 
-  //add multi to empty list
-  emptyList.addAll([1, 2, 3]);
-  print(emptyList);
+  //add something
+  toppings['Ahmed'] = 'Sausage';
+  print(toppings);
 
-  //insert at specific position (pos, item)
-  myLists.insert(3, 100);
-  print(myLists);
+  //add many things
+  toppings.addAll({'Adil': 'Bacon', 'Omar': 'Supreme'});
+  print(toppings);
 
-  //insert many
-  myLists.insertAll(1, [42, 43, 44]);
-  print(myLists);
+  //remove something
+  toppings.remove('Mohamed');
 
-  //mix list
-  var mixedList = [1, 2, 3, 'Jhon', 'Bob'];
-  print(mixedList);
-
-  //remove from list
-  mixedList.remove('Jhon');
-  print(mixedList);
-
-  //remove from specific location
-  mixedList.remove(1);
-  print(mixedList);
+  //remove everything
+  toppings.clear();
 }
