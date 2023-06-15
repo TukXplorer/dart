@@ -1,30 +1,20 @@
-// Maps
+// Loops
 void main() {
-  // Maps, key/value pairs
-  var toppings = {'Taoufik': 'royal', 'Mohamed': 'margarita'};
-  print(toppings);
-  print(toppings['Taoufik']);
+  // For Loop
+  var num = 6;
+  for (var i = num; i >= 1; i--) {
+    print(i);
+  }
 
-  //show values
-  print(toppings.values);
+  // for in loop
+  var names = ['jhon', 'tina', 'steve'];
+  for (var name in names) {
+    print(name);
+  }
 
-  //show key
-  print(toppings.keys);
-
-  //show length
-  print(toppings.length);
-
-  //add something
-  toppings['Ahmed'] = 'Sausage';
-  print(toppings);
-
-  //add many things
-  toppings.addAll({'Adil': 'Bacon', 'Omar': 'Supreme'});
-  print(toppings);
-
-  //remove something
-  toppings.remove('Mohamed');
-
-  //remove everything
-  toppings.clear();
+  // While Loop
+  while (num >= 1) {
+    print(num);
+    num--;
+  }
 }
