@@ -1,9 +1,20 @@
-// Type convertion from user
-import 'dart:io';
+// Fizzbuzz
 
 void main() {
-  print('Enter A number:');
-  var num = stdin.readLineSync();
-  var num2 = int.parse(num ?? "0") + 10;
-  print(num2);
+  //loop
+  int num = 1;
+  while (num <= 100) {
+    if (num % 5 == 0 && num % 3 == 0) {
+      print('$num. Fuzzbuzz!');
+    } else if (num % 3 == 0) {
+      print('$num. Fizz');
+    } else if (num % 5 == 0) {
+      print('$num. buzz');
+    } else {
+      print('$num.');
+    }
+
+    // Increment the counter
+    num++;
+  }
 }
